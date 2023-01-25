@@ -48,8 +48,8 @@
 <meta property="og:description" content="建 站 史   2023-01-18             更换Artalk评论系统              2023-01-10             更换博客域名为wndbac.cn，缩短长度              2022-12-22             更新主题至6.0-pjax版本              2022-11             使用hexo-abbrl">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-01-25T10:51:23.327Z">
-<meta property="article:modified_time" content="2023-01-25T10:51:23.327Z">
+<meta property="article:published_time" content="2023-01-25T10:55:28.341Z">
+<meta property="article:modified_time" content="2023-01-25T10:55:28.341Z">
 <meta property="article:author" content="WindBack">
 <meta property="article:tag" content="Volantis,Hexo,Blog,WindBack">
 <meta name="twitter:card" content="summary">
@@ -2316,7 +2316,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1674643911627),
+    lastupdate: new Date(1674644158556),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -4186,69 +4186,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-      <script>
-  volantis.layoutHelper("comments",`<div id="beaudar_container"></div>`)
-
-  volantis.beaudar = {};
-
-  function check_beaudar() {
-    if (volantis.dark.mode === "dark") {
-      volantis.beaudar.Theme = 'github-dark';
-    } else {
-      volantis.beaudar.Theme = 'github-light';
-    }
-
-    return document.getElementById("beaudar_container");
-  }
-
-  function pjax_beaudar() {
-    const HEAD = check_beaudar();
-    if (!HEAD) return;
-
-    const script = document.createElement('script');
-    let issuenumber = "";
-    if (issuenumber) {
-      script.setAttribute('issue-number', issuenumber);
-    } else {
-      script.setAttribute('issue-term', "pathname");
-    }
-    script.setAttribute('src', 'https://beaudar.lipk.org/client.js');
-    script.setAttribute('repo', 'wndbac/beaudar');
-    script.setAttribute('input-position', 'top');
-    script.setAttribute('branch', 'main');
-    script.setAttribute('comment-order', 'desc');
-    script.setAttribute('label', '✨💬✨');
-    script.setAttribute('theme', volantis.beaudar.Theme);
-    script.setAttribute('crossorigin', "anonymous");
-    HEAD.appendChild(script);
-  }
-
-  function dark_beaudar() {
-    const HEAD = check_beaudar();
-    if (!HEAD) return;
-
-    const message = {
-      type: 'set-theme',
-      theme: volantis.beaudar.Theme
-    };
-    const beaudarIframe = document.querySelector('iframe');
-    beaudarIframe.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
-  }
-
-  function check_beaudar_style() {
-    // Beaudar 会往 HEAD 的首节点追加样式元素，而这个追加没有添加判断
-    // 所以 Pjax 下会多次添加样式文件，略微麻烦。
-    const checkStyle = document.querySelector('head').firstElementChild;
-    if(checkStyle.innerText.includes('beaudar')) checkStyle.remove();
-  }
-
-  pjax_beaudar();
-  volantis.pjax.push(check_beaudar_style);
-  volantis.pjax.push(pjax_beaudar);
-  volantis.dark.push(dark_beaudar);
-</script>
-
-    
 
 
 
@@ -4537,7 +4474,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WindBack的小站","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","sameAs":["https://github.com/volantis-x"],"description":"各自努力，山顶再见。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://wndbac.cn/","name":"WindBack的小站"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WindBack的小站","url":"https://wndbac.cn/","keywords":"Volantis,Hexo,Blog,WindBack","description":"各自努力，山顶再见。","author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","description":"各自努力，山顶再见。"},"publisher":{"@type":"Organization","name":"WindBack的小站","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://wndbac.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"建站史","description":"各自努力，山顶再见。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wndbac.cn/history/index.html"},"author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/"},"publisher":{"@type":"Organization","name":"WindBack的小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wndbac.cn/history/index.html","wordCount":0,"datePublished":"2023-01-25T10:51:23.327Z","dateModified":"2023-01-25T10:51:23.327Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WindBack的小站","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","sameAs":["https://github.com/volantis-x"],"description":"各自努力，山顶再见。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://wndbac.cn/","name":"WindBack的小站"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WindBack的小站","url":"https://wndbac.cn/","keywords":"Volantis,Hexo,Blog,WindBack","description":"各自努力，山顶再见。","author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","description":"各自努力，山顶再见。"},"publisher":{"@type":"Organization","name":"WindBack的小站","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://wndbac.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"建站史","description":"各自努力，山顶再见。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wndbac.cn/history/index.html"},"author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/"},"publisher":{"@type":"Organization","name":"WindBack的小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wndbac.cn/history/index.html","wordCount":0,"datePublished":"2023-01-25T10:55:28.341Z","dateModified":"2023-01-25T10:55:28.341Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
