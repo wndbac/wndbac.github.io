@@ -2314,7 +2314,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1674804307620),
+    lastupdate: new Date(1674824456901),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -4473,6 +4473,68 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
+      <script>
+  volantis.layoutHelper("comments",`<div id="artalk_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`);
+  function load_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    volantis.css("https://static.wndbac.cn/storage/artalk/Artalk.css");
+    
+    volantis.js("https://static.wndbac.cn/storage/artalk/Artalk.js").then(pjax_artalk);
+    
+  }
+
+  function pjax_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    let path = pdata.commentPath;
+    let placeholder = pdata.commentPlaceholder || "" || "";
+    if (path.length == 0) {
+      path = '' || decodeURI(window.location.pathname);
+    }
+    if(!':abbrlink/'.includes('/index.html')) {
+      path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
+    }
+
+    volantis.artalk = new Artalk(Object.assign({"server":"https://artalk.ckjwl.com","path":null,"placeholder":null,"visitor":false,"latex":false,"imageUploader":{"api":null,"token":null,"resp":null}}, {
+      el: '#artalk_container',
+      pageKey: path,
+      pageTitle: document.title,
+      placeholder: placeholder,
+      useBackendConf: true,
+      site: 'WindBack的小站',
+      darkMode: volantis.dark.mode === "dark",
+      pvEl: '#artalk_visitors',
+
+      
+    }));
+
+    if (typeof VolantisFancyBox === "undefined"){
+      const checkFancyBox = setInterval(() => {
+        if(typeof VolantisFancyBox === "undefined") return;
+        clearInterval(checkFancyBox);
+        VolantisFancyBox.bind('.atk-content img:not([atk-emoticon])');
+      })
+    } else {
+      VolantisFancyBox.bind('.atk-content img:not([atk-emoticon])');
+    }
+  }
+
+  load_artalk();
+  volantis.pjax.push(()=>{
+    if (typeof Artalk === "undefined") {
+      load_artalk();
+    } else {
+      pjax_artalk();
+    }
+  },'artalk');
+
+  function dark_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0]) return;
+    volantis?.artalk?.setDarkMode(volantis.dark.mode === "dark")
+  }
+  volantis.dark.push(dark_artalk);
+</script>
+
+    
 
 
 
