@@ -6,7 +6,7 @@
   <link href="https://wndbac.cn/atom.xml" rel="self"/>
   
   <link href="https://wndbac.cn/"/>
-  <updated>2023-01-14T05:09:06.000Z</updated>
+  <updated>2023-02-04T07:12:30.000Z</updated>
   <id>https://wndbac.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://wndbac.cn/a7e70425/"/>
     <id>https://wndbac.cn/a7e70425/</id>
     <published>2023-01-13T04:55:58.000Z</published>
-    <updated>2023-01-14T05:09:06.000Z</updated>
+    <updated>2023-02-04T07:12:30.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>灯花助春意，舞绶织欢心。新的一年，新的气象，快来为你的博客挂上漂漂亮亮的小🏮吧！</p><p>本教程直接引入 <a href="https://www.vvhan.com/">@韩小韩</a> 的 <a href="https://api.vvhan.com/">API</a> 接口，以便实现最简化调用。如若担心引用接口失效，可以参考 <a href="https://blog.xlenco.top/">@Xlenco</a> 的 <a href="https://blog.xlenco.top/posts/ada5.html">这篇</a> 文章以获得帮助。</p><h2 id="开始教程"><a href="#开始教程" class="headerlink" title="开始教程"></a>开始教程</h2><p>引入代码如下：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- lanters --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://api.vvhan.com/api/denglong2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>本教程以 Volantis 主题为例</p><p>在根目录下 soure 文件夹中新建 _volantis&#x2F;bodyEnd.ejs 文件</p><p>文件填写上述引入代码即可</p><p><strong>注：记得 <code>hexo clean</code> 哦，以防止改动未生效</strong></p><h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>至此，你的博客已经挂上了漂亮的迎春灯笼🎉🎉🎉，效果如下图所示：</p><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" href='https://gcore.jsdelivr.net/gh/wndbac/Static/blog_img/2023/1/image_ed184f260acb6dcda3e5f5f99e019e74.png' data-fancybox='default' data-caption='demo'><img fancybox itemprop="contentUrl" src="https://gcore.jsdelivr.net/gh/wndbac/Static/blog_img/2023/1/image_ed184f260acb6dcda3e5f5f99e019e74.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/wndbac/Static/blog_img/2023/1/image_ed184f260acb6dcda3e5f5f99e019e74.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="demo"></a><span class='image-caption'>demo</span></div></div><blockquote><p>如上教程，亦可以引入其它 API 来实现此类效果，万变不离其宗！</p></blockquote>]]></content>
     
