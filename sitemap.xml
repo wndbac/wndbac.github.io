@@ -4,7 +4,7 @@
   <url>
     <loc>https://wndbac.cn/about/index.html</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,7 @@
   <url>
     <loc>https://wndbac.cn/categories/index.html</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +22,7 @@
   <url>
     <loc>https://wndbac.cn/fcircle/index.html</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,7 +31,7 @@
   <url>
     <loc>https://wndbac.cn/friends/index.html</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -40,7 +40,7 @@
   <url>
     <loc>https://wndbac.cn/history/index.html</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +49,7 @@
   <url>
     <loc>https://wndbac.cn/messages/index.html</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,7 +58,7 @@
   <url>
     <loc>https://wndbac.cn/notes/index.html</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -67,7 +67,7 @@
   <url>
     <loc>https://wndbac.cn/tags/index.html</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,7 +76,7 @@
   <url>
     <loc>https://wndbac.cn/talks/index.html</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,7 +85,7 @@
   <url>
     <loc>https://wndbac.cn/virus/index.html</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -94,7 +94,7 @@
   <url>
     <loc>https://wndbac.cn/welcome/index.html</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -130,7 +130,7 @@
 
   <url>
     <loc>https://wndbac.cn/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -138,14 +138,14 @@
   
   <url>
     <loc>https://wndbac.cn/tags/Hexo/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://wndbac.cn/tags/Volantis/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -154,14 +154,14 @@
   
   <url>
     <loc>https://wndbac.cn/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://wndbac.cn/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
