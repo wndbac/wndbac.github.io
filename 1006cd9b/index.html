@@ -2316,7 +2316,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1677312648497),
+    lastupdate: new Date(1677313649530),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -4440,7 +4440,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
     }
 
-    volantis.artalk = new Artalk(Object.assign({"server":"https://artalk.ckjwl.com","path":null,"placeholder":null,"visitor":false,"latex":false,"imageUploader":{"api":"https://sm.ms/api/v2/","token":"avwp8itOJmfFFMu8CbUtcjOMqlulRRMT","resp":"data.url"}}, {
+    volantis.artalk = new Artalk(Object.assign({"server":"https://artalk.ckjwl.com","path":null,"placeholder":null,"visitor":false,"latex":false,"imageUploader":{"api":null,"token":null,"resp":null}}, {
       el: '#artalk_container',
       pageKey: path,
       pageTitle: document.title,
@@ -4450,22 +4450,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       darkMode: volantis.dark.mode === "dark",
       pvEl: '#artalk_visitors',
 
-      
-      imgUploader: function(file) {
-        let headers = new Headers();
-        headers.set('Accept', 'application/json');
-        
-          headers.set('Authorization', 'avwp8itOJmfFFMu8CbUtcjOMqlulRRMT')
-        
-        let formData = new FormData();
-        formData.append('file', file);
-        return fetch('https://sm.ms/api/v2/',{
-          method: 'POST',
-          body: formData,
-          headers: headers
-          }).then((resp) => resp.json())
-            .then((resp) => resp.data.url)
-      },
       
     }));
 
