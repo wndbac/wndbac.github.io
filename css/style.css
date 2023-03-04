@@ -8234,3 +8234,11 @@ details summary.default-cursor,
     font-size: 1rem !important;
   }
 }
+.post.post-v3.white-box {
+  text-align: left;
+  text-indent: 2em;
+}
+.md {
+  text-align: left;
+  text-indent: 2em;
+}
