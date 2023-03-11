@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://wndbac.cn/history/"/>
+  <link rel="canonical" href="https://wndbac.cn/c6a56fac/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -37,21 +37,21 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="WindBack" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>建站史 - WindBack</title>
-  <meta name="keywords" content="Volantis,Hexo,Blog,WindBack">
+  <title>部署Cloudflare反代 - WindBack</title>
+  <meta name="keywords" content="Cloudflare,Volantis,Hexo,Blog,WindBack">
   <meta desc name="description" content="各自努力，山顶再见。 - WindBack - WindBack">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="WindBack">
-<meta property="og:url" content="https://wndbac.cn/history/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="部署Cloudflare反代">
+<meta property="og:url" content="https://wndbac.cn/c6a56fac/index.html">
 <meta property="og:site_name" content="WindBack">
-<meta property="og:description" content="建 站 史   2023-01-18             更换Artalk评论系统              2023-01-10             更换博客域名为wndbac.cn，缩短长度              2022-12-22             更新主题至6.0-pjax版本              2022-11             使用hexo-abbrl">
+<meta property="og:description" content="前言我们的站点通常会使用一些CDN来进行加速，例如 jsDelivr, UNPKG 等，但是它们在境内的加速效果都不是很理想。 解决方法Cloudflare在全球速度都是相对很快的，所以这里选择使用Cloudflare进行反代以上的CDN服务以解决它们在境内速度慢的问题。  注：如若没有 Cloudflare 账号，要先去注册一个，并与 GitHub 连接。  源码index.html 123&amp;l">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-03-11T09:34:07.054Z">
-<meta property="article:modified_time" content="2023-03-11T09:34:07.054Z">
+<meta property="article:published_time" content="2023-03-11T08:48:25.000Z">
+<meta property="article:modified_time" content="2023-03-11T00:48:26.000Z">
 <meta property="article:author" content="WindBack">
-<meta property="article:tag" content="Volantis,Hexo,Blog,WindBack">
+<meta property="article:tag" content="Cloudflare">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -3214,7 +3214,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl.ejs -->
-      <div id="none" class='cover-wrapper page dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://static.wndbac.cn/img/background.jpg"></div>
 
@@ -3291,8 +3291,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md blur article-type-page" id="page" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://wndbac.cn/history/index.html">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://wndbac.cn/c6a56fac/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="WindBack">
   </span>
@@ -3312,44 +3312,192 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        部署Cloudflare反代
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://static.wndbac.cn/avatar.jpg" class="lazyload" data-srcset="https://static.wndbac.cn/avatar.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">WindBack</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-03-11T08:48:25+00:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年3月11日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url"><span itemprop="name">博客</span></a>
       </span>
+    
+  </div>
+  
+
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：437 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：1 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="busuanzi_value_page_pv">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+             
+  <div class="new-meta-item comments-count"> 
+     
+    <a href="/c6a56fac/#comments"> 
+      <i class="fa-solid fa-comment-dots fa-fw"></i> 
+      <p> 
+        <span data-page-key="/c6a56fac/" id="ArtalkCount"> 
+          <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+        </span> 
+         
+          <span class="leancloud-comments-count">&nbsp;条评论</span> 
+         
+      </p>       
+    </a> 
+  </div> 
+ 
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <center>
-<span class='p large red'>建</span>
-<span class='p large yellow'>站</span>
-<span class='p large green'>史</span>
-</center>
+    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们的站点通常会使用一些CDN来进行加速，例如 <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">jsDelivr</a>, <a target="_blank" rel="noopener" href="https://cdn.wndbac.cn/npm/">UNPKG</a> 等，但是它们在境内的加速效果都不是很理想。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>Cloudflare在全球速度都是相对很快的，所以这里选择使用Cloudflare进行反代以上的CDN服务以解决它们在境内速度慢的问题。</p>
+<blockquote>
+<p>注：如若没有 <a target="_blank" rel="noopener" href="https://www.cloudflare.com/">Cloudflare</a> 账号，要先去注册一个，并与 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 连接。</p>
+</blockquote>
+<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p><strong>index.html</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">language</span>=<span class="string">&quot;javascript&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">	<span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span> = <span class="string">&#x27;https://cdn.wndbac.cn&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<div class="timenode"><div class="meta"><p><p>2023-01-18</p>
-</p></div><div class="body"><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>更换<code>Artalk</code>评论系统</p>            </div></div></div>
+<p><strong>_worker.js</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    <span class="keyword">async</span> <span class="title function_">fetch</span>(<span class="params">request, env</span>) &#123;</span><br><span class="line">      <span class="keyword">let</span> url = <span class="keyword">new</span> <span class="title function_">URL</span>(request.<span class="property">url</span>);</span><br><span class="line">      <span class="keyword">if</span> (url.<span class="property">pathname</span>.<span class="title function_">startsWith</span>(<span class="string">&#x27;/&#x27;</span>)) &#123;</span><br><span class="line">        url.<span class="property">hostname</span>=<span class="string">&quot;cdn.jsdelivr.net&quot;</span>; <span class="comment">// 需要反代的域名</span></span><br><span class="line">        <span class="keyword">let</span> new_request=<span class="keyword">new</span> <span class="title class_">Request</span>(url,request);</span><br><span class="line">        <span class="keyword">return</span> <span class="title function_">fetch</span>(new_request);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">// 否则，提供静态资产。</span></span><br><span class="line">      <span class="keyword">return</span> env.<span class="property">ASSETS</span>.<span class="title function_">fetch</span>(request);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br></pre></td></tr></table></figure>
 
-<div class="timenode"><div class="meta"><p><p>2023-01-10</p>
-</p></div><div class="body"><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>更换博客域名为<code>wndbac.cn</code>，缩短长度</p>            </div></div></div>
+<blockquote>
+<p>注：index.html文件其实即为一个重定向，请将<a target="_blank" rel="noopener" href="https://cdn.wndbac.cn替换为自己的域名或后面cloudflare分配的域名./">https://cdn.wndbac.cn替换为自己的域名或后面Cloudflare分配的域名。</a></p>
+</blockquote>
+<p>将以上代码导入Cloudflare，然后绑定自己的域名（可无），最后就大功告成了。</p>
+<p>反代的 <strong>cdn.jsdelivr.net</strong> 可能用自己的域名或者Cloudflare分配给你的域名会自动跳转到原被反代域名上，此为正常现象（jsDelivr的问题）。</p>
+<p>使用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm:https://部署的域名/npm/package@version/file</span><br><span class="line">GitHub:https://部署的域名/gh/user/repo@version/file</span><br><span class="line">WordPress:https://部署的域名/wp/plugins/project/tags/version/file</span><br></pre></td></tr></table></figure>
 
-<div class="timenode"><div class="meta"><p><p>2022-12-22</p>
-</p></div><div class="body"><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>更新主题至<code>6.0-pjax</code>版本</p>            </div></div></div>
-
-<div class="timenode"><div class="meta"><p><p>2022-11</p>
-</p></div><div class="body"><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>使用<code>hexo-abbrlink</code>插件生成文章路径</p>            </div><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>使用<code>hexo-generator-baidu-sitemap</code>插件生成百度网站地图</p>            </div><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>使用<code>hexo-generator-sitemap</code>生成网站地图</p>            </div><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>使用<code>hexo-wordcount</code>字数统计和阅读时长插件</p>            </div></div></div>
-
-<div class="timenode"><div class="meta"><p><p>2022-10</p>
-</p></div><div class="body"><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>部署<code>Qexo</code>对博客进行管理</p>            </div><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>全站使用<code>Pjax</code>实现无刷新加载</p>            </div><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>添加<code>Twikoo</code>评论系统</p>            </div><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>使用<code>QexoSays</code>新增<code>说说</code>页面</p>            </div></div></div>
-
-<div class="timenode"><div class="meta"><p><p>2022-09-11</p>
-</p></div><div class="body"><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>使用<code>Hexo</code>作为框架，以<code>Volantis</code>作为主题</p>            </div></div></div>
-
-<div class="timenode"><div class="meta"><p><p>2021-07</p>
-</p></div><div class="body"><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>完全自写html</p>            </div><div class='checkbox checked'><input type="radio" checked="checked"/>            <p>使用<code>Valine</code>评论系统</p>            </div></div></div>
+<p>更多可访问 <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">jsDelivr</a> 官网查看：</p>
+<p><img src="https://cdn.wndbac.cn/gh/wndbac/Static/blog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png" class="lazyload" data-srcset="https://cdn.wndbac.cn/gh/wndbac/Static/blog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="https://cdn.wndbac.cn/gh/wndbac/Static/blog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png"></p>
+<p>只需将它的 <strong>cdn.jsdelivr.net</strong> 替换为你部署的域名即可。</p>
+<blockquote>
+<p>同理：反代其它网站也可以使用上述代码，但若别人开启了禁止反代等保护手段，就无法。</p>
+</blockquote>
+<p>如果你觉得部署有些繁琐，可以使用我部署的：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://cdn.wndbac.cn/">https://cdn.wndbac.cn</a></p>
+</blockquote>
 
   </div>
   
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+        
+      
+      <!-- 版权声明组件 -->
+      
+        
+          
+          <div class="copyright license">
+            <div class="license-title">部署Cloudflare反代</div>
+            <div class="license-link"><a href="https://wndbac.cn/c6a56fac/">https://wndbac.cn/c6a56fac/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">WindBack</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2023年3月11日</div>
+              </div>
+              
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh#" target="_blank">CC BY-NC-SA 4.0</a></div>
+              </div>
+            </div>
+            <div class="license-statement">署名-非商业性使用-相同方式共享 4.0 国际。</div>
+          </div>
+        
+      
+      <!-- 打赏组件 -->
+      
+    </div>
   
   
     
@@ -3357,6 +3505,88 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div class='article-meta' id="bottom">
     <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-03-11T08:48:26+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年3月11日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Cloudflare/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Cloudflare</p></a></div>
+  <span hidden itemprop="keywords">Cloudflare</span>
+  
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wndbac.cn/c6a56fac/&title=部署Cloudflare反代 - WindBack&summary="
+          
+          >
+          
+            <img src="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://wndbac.cn/c6a56fac/&title=部署Cloudflare反代 - WindBack&summary="
+          
+          >
+          
+            <img src="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://wndbac.cn/c6a56fac/&title=部署Cloudflare反代 - WindBack&summary="
+          
+          >
+          
+            <img src="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAAD4CAAAAADkunTXAAACQUlEQVR42u3bQZLCMAwEQP7/afYFVKyRWEBp3xzAcfs0JZnH86bjAQ4ODg4Ovgj+CEf5hS9+lz5P9wsODg4ODr4RPg14+eLigb76fbpfcHBwcHDwzfDLANCcnx5MdX68Hjg4ODg4OPhxoDgNHGmAAQcHBwcHB+/Dq0Glux44ODg4ODj4QIH+8MJAdYNf30kBBwcHBwf/Inh8Ye5D84/fbAQHBwcHB/8CeHecHkz1+fNNAxwcHBwcfBM8DQjdRn933XQdcHBwcHDwzfDTxn7aEEgb/TE07aSAg4ODg4P/ALz7wqkNdQ8wrsCAg4ODg4P/MHwqiKSFiGpwSgMWODg4ODj4RnjaAOhueDq4lBsK4ODg4ODgN4RXD+b089NA8raGAjg4ODg4+A/D06CRXuRLwe2ABQ4ODg4OvhheXahbUEifnx4IODg4ODj4ZnjaKKgGkKmCx1hDARwcHBwcfCF8KlCkwScdpwcNDg4ODg6+EV5tIFSDSbcxke73MsCAg4ODg4MvgsfBICxodANNubEBDg4ODg5+A/hU479agEgLE8eND3BwcHBw8EXw7qgWEMobHQ464ODg4ODgm+DdRvwpdCyAFL9/WYgABwcHBwdfAE8DS1rg7zYG4v2Dg4ODg4Mvhk8HiPTiQVxoSAMMODg4ODg4+Nv+kF+9YBDfiAAHBwcHB78hvDpPg1G78QEODg4ODr4Ynl7o617Imzqoy8IGODg4ODj4QngaDP5942FwAQcHBwcH3wi/2wAHBwcHB18w/gBUcwJM8yJkVAAAAABJRU5ErkJggg==">
+          </div>
+        </div>
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
       
     </div>
     <!-- Custom Files bottomMeta begin -->
@@ -3369,6 +3599,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/a7e70425/'>
+          <p class='title'>给博客挂上灯笼<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>引言灯花助春意，舞绶织欢心。新的一年，新的气象，快来为你的博客挂上漂漂亮亮的小🏮吧！
+本教程直接引入 @韩小韩 的 API 接口，以便实现最简化调用。如若担心此接口失效，可参考 @Xlenco...</p>
+        </a>
+      
+    </div>
+  
   <!-- 文章推荐 -->
   
   
@@ -3376,6 +3617,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <!-- Custom Files postEnd end-->
 </article>
+
+
+  
+
+
+  <article class="post white-box blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/c6a56fac/index.html#comments">
+    </span>
+    <p ct><i class='fa-duotone light-blue fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
 
 
 
@@ -3498,9 +3756,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-text">解决方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BA%90%E7%A0%81"><span class="toc-text">源码</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3562,7 +3830,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4454,6 +4722,25 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
 
+        <style>
+  #post-body p {
+    text-indent: 2em;
+  }
+  #post-body .new-meta-box p,
+  #post-body .note p,
+  #post-body .prev-next p,
+  #post-body .tag p,
+  #post-body blockquote p,
+  #post-body details p,
+  #post-body p.p,
+  #post-body .tab-pane .checkbox
+  #post-body section p {
+    text-indent: initial;
+  }
+</style>
+
+
+
 </pjax>
 
 <script>
@@ -4590,7 +4877,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WindBack","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","sameAs":["https://github.com/volantis-x"],"description":"各自努力，山顶再见。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://wndbac.cn/","name":"WindBack"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WindBack","url":"https://wndbac.cn/","keywords":"Volantis,Hexo,Blog,WindBack","description":"各自努力，山顶再见。","author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","description":"各自努力，山顶再见。"},"publisher":{"@type":"Organization","name":"WindBack","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://wndbac.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"建站史","description":"各自努力，山顶再见。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wndbac.cn/history/index.html"},"author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/"},"publisher":{"@type":"Organization","name":"WindBack","logo":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wndbac.cn/history/index.html","wordCount":0,"datePublished":"2023-03-11T09:34:07.054Z","dateModified":"2023-03-11T09:34:07.054Z","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WindBack","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","sameAs":["https://github.com/volantis-x"],"description":"各自努力，山顶再见。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://wndbac.cn/","name":"WindBack"}},{"@type":"ListItem","position":2,"item":{"@id":"https://wndbac.cn/categories/博客/","name":"博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://wndbac.cn/c6a56fac/","name":"部署Cloudflare反代"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WindBack","url":"https://wndbac.cn/","keywords":"Volantis,Hexo,Blog,WindBack","description":"各自努力，山顶再见。","author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","description":"各自努力，山顶再见。"},"publisher":{"@type":"Organization","name":"WindBack","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://wndbac.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"部署Cloudflare反代","description":"各自努力，山顶再见。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wndbac.cn/c6a56fac/"},"author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/"},"publisher":{"@type":"Organization","name":"WindBack","logo":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wndbac.cn/c6a56fac/","wordCount":0,"datePublished":"2023-03-11T08:48:25.000Z","dateModified":"2023-03-11T00:48:26.000Z","articleSection":"博客","keywords":"Cloudflare","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
