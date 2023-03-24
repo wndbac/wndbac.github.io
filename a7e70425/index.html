@@ -2317,7 +2317,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1679144759024),
+    lastupdate: new Date(1679660914164),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -4545,15 +4545,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       
     }));
 
-    if (typeof VolantisFancyBox === "undefined"){
-      const checkFancyBox = setInterval(() => {
-        if(typeof VolantisFancyBox === "undefined") return;
-        clearInterval(checkFancyBox);
-        VolantisFancyBox.bind('.atk-content img:not([atk-emoticon])');
+    Artalk.use(ctx => {
+      ctx.on('list-loaded', () => {
+        if (typeof VolantisFancyBox === "undefined"){
+          const checkFancyBox = setInterval(() => {
+            if(typeof VolantisFancyBox === "undefined") return;
+            clearInterval(checkFancyBox);
+            VolantisFancyBox.groupBind('.atk-content img:not([atk-emoticon])', 'Comments');
+          })
+        } else {
+          VolantisFancyBox.groupBind('.atk-content img:not([atk-emoticon])', 'Comments');
+        }
       })
-    } else {
-      VolantisFancyBox.bind('.atk-content img:not([atk-emoticon])');
-    }
+    })
   }
 
   load_artalk();
@@ -4567,7 +4571,9 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function dark_artalk() {
     if(!document.querySelectorAll("#artalk_container")[0]) return;
-    volantis?.artalk?.setDarkMode(volantis.dark.mode === "dark")
+    volantis.artalk.then(ctx => {
+      ctx.setDarkMode(volantis.dark.mode === "dark")
+    })
   }
   volantis.dark.push(dark_artalk);
 </script>
