@@ -31,8 +31,8 @@
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://static.wndbac.cn/storage/image/favicon.ico">
   <link rel="preload" href="/css/style.css" as="style">
-  <link rel="preload" href="https://storage.wndbac.cn/storage/font/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
-<link rel="preload" href="https://storage.wndbac.cn/storage/font/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
+  <link rel="preload" href="https://static.wndbac.cn/storage/font/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
+<link rel="preload" href="https://static.wndbac.cn/storage/font/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="WindBack" type="application/atom+xml">
@@ -47,13 +47,13 @@
 <meta property="og:site_name" content="WindBack">
 <meta property="og:description" content="我们的站点通常会使用一些CDN来进行加速，例如jsDelivr, UNPKG等，但是它们在境内的加速效果都不是很理想，本篇阐述如何用Cloudflare反代它们以达到提速效果。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-03-11T08:48:25.000Z">
 <meta property="article:modified_time" content="2023-03-11T00:48:26.000Z">
 <meta property="article:author" content="WindBack">
 <meta property="article:tag" content="Cloudflare">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
     /* 首屏样式 */
     #safearea {
@@ -990,14 +990,14 @@ button {
 }
 @font-face {
   font-family: 'UbuntuMono';
-  src: url("https://storage.wndbac.cn/storage/font/FZFWZhuZiAYuanJR.OTF");
+  src: url("https://static.wndbac.cn/storage/font/FZFWZhuZiAYuanJR.OTF");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
   font-family: 'Varela Round';
-  src: url("https://storage.wndbac.cn/storage/font/FZFWZhuZiAYuanJR.OTF");
+  src: url("https://static.wndbac.cn/storage/font/FZFWZhuZiAYuanJR.OTF");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -2302,11 +2302,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   /******************************************************************************/
   //图像加载出错时的处理
   function errorImgAvatar(img) {
-    img.src = "https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg";
+    img.src = "https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg";
     img.onerror = null;
   }
   function errorImgCover(img) {
-    img.src = "https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg";
+    img.src = "https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg";
     img.onerror = null;
   }
   /******************************************************************************/
@@ -2315,8 +2315,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.GLOBAL_CONFIG ={
     root: '/',
     debug: false,
-    default: {"avatar":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1679662116607),
+    default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
+    lastupdate: new Date(1679662316505),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3305,7 +3305,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
     <span hidden>
-      <meta itemprop="image" content="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
   <div class="article-meta" id="top">
@@ -3426,7 +3426,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们的站点通常会使用一些CDN来进行加速，例如 <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">jsDelivr</a>, <a target="_blank" rel="noopener" href="https://cdn.wndbac.cn/npm/">UNPKG</a> 等，但是它们在境内的加速效果都不是很理想。</p>
+    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们的站点通常会使用一些CDN来进行加速，例如 <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">jsDelivr</a>, <a target="_blank" rel="noopener" href="https://unpkg.com/">UNPKG</a> 等，但是它们在境内的加速效果都不是很理想。</p>
 <h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>Cloudflare在全球速度都是相对较快的，所以这里选择使用Cloudflare进行反代以上的CDN服务以解决它们在境内速度慢的问题。</p>
 <blockquote>
 <p>注：如若没有 <a target="_blank" rel="noopener" href="https://www.cloudflare.com/">Cloudflare</a> 账号，要先去注册一个，并与 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 连接。</p>
@@ -3446,7 +3446,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm: https://yourdomain/npm/package@version/file</span><br><span class="line">GitHub: https://yourdomain/gh/user/repo@version/file</span><br><span class="line">WordPress: https://yourdomain/wp/plugins/project/tags/version/file</span><br></pre></td></tr></table></figure>
 
 <p>更多可访问 <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">jsDelivr</a> 官网查看：</p>
-<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://cdn.wndbac.cn/gh/wndbac/Static/blog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png' data-fancybox='default' data-caption='jsDelivr'><img fancybox itemprop="contentUrl" src="https://cdn.wndbac.cn/gh/wndbac/Static/blog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png" class="lazyload" data-srcset="https://cdn.wndbac.cn/gh/wndbac/Static/blog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="jsDelivr"></a><span class='image-caption'>jsDelivr</span></div></div>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://storage.wndbac.cnblog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png' data-fancybox='default' data-caption='jsDelivr'><img fancybox itemprop="contentUrl" src="https://storage.wndbac.cnblog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png" class="lazyload" data-srcset="https://storage.wndbac.cnblog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="jsDelivr"></a><span class='image-caption'>jsDelivr</span></div></div>
 
 <p>只需将 <strong>cdn.jsdelivr.net</strong> 替换为你部署反代服务的域名即可。</p>
 <blockquote>
@@ -3537,7 +3537,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           
         </a>
       
@@ -3549,7 +3549,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           
         </a>
       
@@ -3561,7 +3561,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           
         </a>
       
@@ -3569,7 +3569,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
         <div class='hoverbox'>
-          <a class='share'><img src="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           <div class='target'>
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAAD4CAAAAADkunTXAAACQUlEQVR42u3bQZLCMAwEQP7/afYFVKyRWEBp3xzAcfs0JZnH86bjAQ4ODg4Ovgj+CEf5hS9+lz5P9wsODg4ODr4RPg14+eLigb76fbpfcHBwcHDwzfDLANCcnx5MdX68Hjg4ODg4OPhxoDgNHGmAAQcHBwcHB+/Dq0Glux44ODg4ODj4QIH+8MJAdYNf30kBBwcHBwf/Inh8Ye5D84/fbAQHBwcHB/8CeHecHkz1+fNNAxwcHBwcfBM8DQjdRn933XQdcHBwcHDwzfDTxn7aEEgb/TE07aSAg4ODg4P/ALz7wqkNdQ8wrsCAg4ODg4P/MHwqiKSFiGpwSgMWODg4ODj4RnjaAOhueDq4lBsK4ODg4ODgN4RXD+b089NA8raGAjg4ODg4+A/D06CRXuRLwe2ABQ4ODg4OvhheXahbUEifnx4IODg4ODj4ZnjaKKgGkKmCx1hDARwcHBwcfCF8KlCkwScdpwcNDg4ODg6+EV5tIFSDSbcxke73MsCAg4ODg4MvgsfBICxodANNubEBDg4ODg5+A/hU479agEgLE8eND3BwcHBw8EXw7qgWEMobHQ464ODg4ODgm+DdRvwpdCyAFL9/WYgABwcHBwdfAE8DS1rg7zYG4v2Dg4ODg4Mvhk8HiPTiQVxoSAMMODg4ODg4+Nv+kF+9YBDfiAAHBwcHB78hvDpPg1G78QEODg4ODr4Ynl7o617Imzqoy8IGODg4ODj4QngaDP5942FwAQcHBwcH3wi/2wAHBwcHB18w/gBUcwJM8yJkVAAAAABJRU5ErkJggg==">
           </div>
@@ -3915,7 +3915,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   
-  volantis.css("https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/libs/@fortawesome/fontawesome-pro/css/all.min.css");
+  volantis.css("https://unpkg.com/volantis-static@0.0.1660614606622/libs/@fortawesome/fontawesome-pro/css/all.min.css");
   
   
   
@@ -4468,7 +4468,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 	hoverDelay: 0
   };
 </script>
-<script defer src="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/libs/flying-pages/flying-pages.min.js"></script>
+<script defer src="https://unpkg.com/volantis-static@0.0.1660614606622/libs/flying-pages/flying-pages.min.js"></script>
 
 
 
@@ -4635,7 +4635,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   
-<script src="https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/libs/comment_typing/comment_typing.js"></script>
+<script src="https://unpkg.com/volantis-static@0.0.1660614606622/libs/comment_typing/comment_typing.js"></script>
 
 
 
@@ -4880,7 +4880,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WindBack","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","sameAs":["https://github.com/volantis-x"],"description":"各自努力，山顶再见。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://wndbac.cn/","name":"WindBack"}},{"@type":"ListItem","position":2,"item":{"@id":"https://wndbac.cn/categories/博客/","name":"博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://wndbac.cn/c6a56fac/","name":"Cloudflare反代"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WindBack","url":"https://wndbac.cn/","keywords":"Volantis,Hexo,Blog,WindBack","description":"各自努力，山顶再见。","author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","description":"各自努力，山顶再见。"},"publisher":{"@type":"Organization","name":"WindBack","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://wndbac.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Cloudflare反代","description":"我们的站点通常会使用一些CDN来进行加速，例如jsDelivr, UNPKG等，但是它们在境内的加速效果都不是很理想，本篇阐述如何用Cloudflare反代它们以达到提速效果。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wndbac.cn/c6a56fac/"},"author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/"},"publisher":{"@type":"Organization","name":"WindBack","logo":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wndbac.cn/c6a56fac/","wordCount":0,"datePublished":"2023-03-11T08:48:25.000Z","dateModified":"2023-03-11T00:48:26.000Z","articleSection":"博客","keywords":"Cloudflare","image":{"@type":"ImageObject","url":"https://cdn.wndbac.cn/npm/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WindBack","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","sameAs":["https://github.com/volantis-x"],"description":"各自努力，山顶再见。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://wndbac.cn/","name":"WindBack"}},{"@type":"ListItem","position":2,"item":{"@id":"https://wndbac.cn/categories/博客/","name":"博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://wndbac.cn/c6a56fac/","name":"Cloudflare反代"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WindBack","url":"https://wndbac.cn/","keywords":"Volantis,Hexo,Blog,WindBack","description":"各自努力，山顶再见。","author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","description":"各自努力，山顶再见。"},"publisher":{"@type":"Organization","name":"WindBack","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://wndbac.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Cloudflare反代","description":"我们的站点通常会使用一些CDN来进行加速，例如jsDelivr, UNPKG等，但是它们在境内的加速效果都不是很理想，本篇阐述如何用Cloudflare反代它们以达到提速效果。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wndbac.cn/c6a56fac/"},"author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/"},"publisher":{"@type":"Organization","name":"WindBack","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wndbac.cn/c6a56fac/","wordCount":0,"datePublished":"2023-03-11T08:48:25.000Z","dateModified":"2023-03-11T00:48:26.000Z","articleSection":"博客","keywords":"Cloudflare","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
