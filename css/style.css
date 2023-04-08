@@ -8373,3 +8373,28 @@ img.error:after {
     display: none;
   }
 }
+#comments img.error:after {
+  content: 'img error';
+}
+.fix-avatar-imgError > div > img.error {
+  min-height: 100%;
+  min-width: 100%;
+}
+.fix-avatar-imgError > div > img.error:after {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+}
+.fix-author-imgError > a > img.error,
+.simpleuser-group > a > img.error {
+  min-height: unset;
+  min-width: unset;
+}
+.hideFancybox {
+  margin: 0 2px;
+}
+.hideFancybox span {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none !important;
+}
