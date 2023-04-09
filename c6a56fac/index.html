@@ -39,17 +39,17 @@
   <!-- 页面元数据 -->
   <title>给你的站点提速 - WindBack的小站</title>
   <meta name="keywords" content="Cloudflare,Volantis,Hexo,Blog,WindBack">
-  <meta desc name="description" content="我们的站点通常会使用一些CDN来进行加速，例如jsDelivr, UNPKG等，但是它们在境内的加速效果都不是很理想，本篇阐述如何用Cloudflare反代它们以达到提速效果。 - WindBack - WindBack的小站">
+  <meta desc name="description" content="我们的站点通常会使用一些CDN来进行加速，例如jsDelivr, UNPKG等，但是它们在境内的加速效果都不是很理想，本篇阐述如何用Cloudflare反代它们以达到提速效果。 - WindBack - WindBack的小站">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="给你的站点提速">
 <meta property="og:url" content="https://wndbac.cn/c6a56fac/index.html">
 <meta property="og:site_name" content="WindBack的小站">
-<meta property="og:description" content="我们的站点通常会使用一些CDN来进行加速，例如jsDelivr, UNPKG等，但是它们在境内的加速效果都不是很理想，本篇阐述如何用Cloudflare反代它们以达到提速效果。">
+<meta property="og:description" content="我们的站点通常会使用一些CDN来进行加速，例如jsDelivr, UNPKG等，但是它们在境内的加速效果都不是很理想，本篇阐述如何用Cloudflare反代它们以达到提速效果。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-03-11T08:48:25.000Z">
-<meta property="article:modified_time" content="2023-03-11T00:48:26.000Z">
+<meta property="article:modified_time" content="2023-04-09T03:13:54.000Z">
 <meta property="article:author" content="WindBack">
 <meta property="article:tag" content="Cloudflare">
 <meta name="twitter:card" content="summary">
@@ -2324,7 +2324,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1681038564134),
+    lastupdate: new Date(1681038932670),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3371,7 +3371,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：411 字</p>
+      <p>字数：405 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -3436,7 +3436,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>将以上代码导入Cloudflare，然后绑定自己的域名（可无），最后就大功告成了。</p>
 <p>反代的 <strong>cdn.jsdelivr.net</strong> 可能用自己的域名或者Cloudflare分配给你的域名会自动跳转到原被反代域名上，此为正常现象（jsDelivr的问题）。</p>
 <p>使用：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm: https://unpkg.com/package@version/file</span><br><span class="line">GitHub: https://gcore.jsdelivr.net/gh/user/repo@version/file</span><br><span class="line">WordPress: https://cdn.jsdelivr.net/wp/plugins/project/tags/version/file</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm: https://domain/npm/package@version/file</span><br><span class="line">GitHub: https://domain/gh/user/repo@version/file</span><br><span class="line">WordPress: https://domain/wp/plugins/project/tags/version/file</span><br></pre></td></tr></table></figure>
 
 <p>更多可访问 <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">jsDelivr</a> 官网查看：</p>
 <div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://cdn.wndbac.cn/gh/wndbac/Static/blog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png' data-fancybox='default' data-caption='jsDelivr'><img fancybox itemprop="contentUrl" src="https://cdn.wndbac.cn/gh/wndbac/Static/blog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png" class="lazyload" data-srcset="https://cdn.wndbac.cn/gh/wndbac/Static/blog_img/2023/3/image_f05b6c26e4dd9599882c8c06ccb2d0bb.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="jsDelivr"></a><span class='image-caption'>jsDelivr</span></div></div>
@@ -3475,6 +3475,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 <div class="license-meta-text">2023年3月11日</div>
               </div>
               
+              <div class="license-meta-item">
+                <div class="license-meta-title">更新于</div>
+                <div class="license-meta-text">2023年4月9日</div>
+              </div>
+              
               
               <div class="license-meta-item">
                 <div class="license-meta-title">许可协议</div>
@@ -3497,10 +3502,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-03-11T08:48:26+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-04-09T11:13:54+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年3月11日</p>
+    <p>更新于：2023年4月9日</p>
   </a>
 </div>
 
@@ -4858,7 +4863,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WindBack的小站","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","sameAs":["https://github.com/volantis-x"],"description":"世态人情，可当书读，可作戏看。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://wndbac.cn/","name":"WindBack的小站"}},{"@type":"ListItem","position":2,"item":{"@id":"https://wndbac.cn/categories/博客/","name":"博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://wndbac.cn/c6a56fac/","name":"给你的站点提速"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WindBack的小站","url":"https://wndbac.cn/","keywords":"Volantis,Hexo,Blog,WindBack","description":"世态人情，可当书读，可作戏看。","author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","description":"世态人情，可当书读，可作戏看。"},"publisher":{"@type":"Organization","name":"WindBack的小站","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://wndbac.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"给你的站点提速","description":"我们的站点通常会使用一些CDN来进行加速，例如jsDelivr, UNPKG等，但是它们在境内的加速效果都不是很理想，本篇阐述如何用Cloudflare反代它们以达到提速效果。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wndbac.cn/c6a56fac/"},"author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/"},"publisher":{"@type":"Organization","name":"WindBack的小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wndbac.cn/c6a56fac/","wordCount":0,"datePublished":"2023-03-11T08:48:25.000Z","dateModified":"2023-03-11T00:48:26.000Z","articleSection":"博客","keywords":"Cloudflare","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"WindBack的小站","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","sameAs":["https://github.com/volantis-x"],"description":"世态人情，可当书读，可作戏看。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://wndbac.cn/","name":"WindBack的小站"}},{"@type":"ListItem","position":2,"item":{"@id":"https://wndbac.cn/categories/博客/","name":"博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://wndbac.cn/c6a56fac/","name":"给你的站点提速"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"WindBack的小站","url":"https://wndbac.cn/","keywords":"Volantis,Hexo,Blog,WindBack","description":"世态人情，可当书读，可作戏看。","author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/","description":"世态人情，可当书读，可作戏看。"},"publisher":{"@type":"Organization","name":"WindBack的小站","url":"https://wndbac.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://wndbac.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"给你的站点提速","description":"我们的站点通常会使用一些CDN来进行加速，例如jsDelivr, UNPKG等，但是它们在境内的加速效果都不是很理想，本篇阐述如何用Cloudflare反代它们以达到提速效果。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://wndbac.cn/c6a56fac/"},"author":{"@type":"Person","name":"WindBack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://wndbac.cn/"},"publisher":{"@type":"Organization","name":"WindBack的小站","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://wndbac.cn/c6a56fac/","wordCount":0,"datePublished":"2023-03-11T08:48:25.000Z","dateModified":"2023-04-09T03:13:54.000Z","articleSection":"博客","keywords":"Cloudflare","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
