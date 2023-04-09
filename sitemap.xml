@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wndbac.cn/welcome/index.html</loc>
-    
-    <lastmod>2023-04-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wndbac.cn/about/index.html</loc>
     
     <lastmod>2023-04-09</lastmod>
@@ -101,6 +92,24 @@
   </url>
   
   <url>
+    <loc>https://wndbac.cn/welcome/index.html</loc>
+    
+    <lastmod>2023-04-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wndbac.cn/6e838c40/</loc>
+    
+    <lastmod>2023-04-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wndbac.cn/1006cd9b/</loc>
     
     <lastmod>2023-04-09</lastmod>
@@ -122,15 +131,6 @@
     <loc>https://wndbac.cn/c6a56fac/</loc>
     
     <lastmod>2023-04-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wndbac.cn/6e838c40/</loc>
-    
-    <lastmod>2023-02-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
