@@ -2324,7 +2324,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1681550638731),
+    lastupdate: new Date(1681550832037),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3430,7 +3430,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>_worker.js</strong></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="keyword">async</span> <span class="title function_">fetch</span>(<span class="params">request, env</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> url = <span class="keyword">new</span> <span class="title function_">URL</span>(request.<span class="property">url</span>);</span><br><span class="line">    url.<span class="property">host</span> = <span class="string">&quot;cdn.jsdelivr.net&quot;</span>;</span><br><span class="line">    <span class="comment">// openai is already set all CORS heasders </span></span><br><span class="line">    <span class="keyword">return</span> <span class="title function_">fetch</span>(url, &#123;</span><br><span class="line">      <span class="attr">headers</span>: request.<span class="property">headers</span>,</span><br><span class="line">      <span class="attr">method</span>: request.<span class="property">method</span>,</span><br><span class="line">      <span class="attr">body</span>: request.<span class="property">body</span>,</span><br><span class="line">      <span class="attr">redirect</span>: <span class="string">&#x27;follow&#x27;</span></span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>将以上代码导入 <code>Cloudflare Pages</code> ，随后绑定自己的域名（可无），就大功告成了。</p>
+<p>将以上代码导入 <code>Cloudflare Pages</code> ，然后绑定自己的域名（可无），就大功告成了。</p>
 <blockquote>
 <p>注：index文件其实即为一个重定向，请将 <a target="_blank" rel="noopener" href="https://cdn.wndbac.cn/">https://cdn.wndbac.cn</a> 替换为自己的域名或后面Cloudflare分配的域名。</p>
 </blockquote>
