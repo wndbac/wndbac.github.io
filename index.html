@@ -215,14 +215,6 @@ button {
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
-@supports (backdrop-filter: blur(20px)) {
-  .blur#comments {
-    backdrop-filter: unset;
-  }
-}
-#layoutHelper-comments {
-  margin-bottom: 100px;
-}
 .shadow {
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -2321,7 +2313,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1689940353152),
+    lastupdate: new Date(1690033191447),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3342,7 +3334,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
     <span hidden itemprop="name headline">
-      2023年7月21日
+      2023年7月22日
     </span>
   
   <div class='md article-desc' itemprop="articleBody">
@@ -3857,7 +3849,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2023-07-21 日</div>
+          <div id="last-update-show">2023-07-22 日</div>
         </div>
       
     </div>
@@ -4606,44 +4598,70 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
-  function load_twikoo() {
-    if(!document.querySelectorAll("#twikoo_container")[0])return;
-    volantis.js("https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.16/twikoo.min.js", pjax_twikoo)
+  volantis.layoutHelper("comments",`<div id="artalk_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`);
+  function load_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    volantis.css("https://static.wndbac.cn/storage/artalk/Artalk.css");
+    
+    volantis.js("https://static.wndbac.cn/storage/artalk/Artalk.js").then(pjax_artalk);
+    
   }
-  function pjax_twikoo() {
-    if(!document.querySelectorAll("#twikoo_container")[0])return;
+
+  function pjax_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
     let path = pdata.commentPath;
     let placeholder = pdata.commentPlaceholder || "" || "";
     if (path.length == 0) {
-      let defaultPath = '';
-      path = defaultPath || decodeURI(window.location.pathname);
+      path = '' || decodeURI(window.location.pathname);
     }
-    twikoo.init(Object.assign(Object.assign({"path":null,"envId":"https://twikoo.wndbac.cn","placeholder":null,"visitor":false}, {
-      el: '#twikoo_container',
-      path: path,
+    if(!':abbrlink/'.includes('/index.html')) {
+      path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
+    }
+
+    volantis.artalk = new Artalk(Object.assign({"server":"https://artalk.ckjwl.com","path":null,"placeholder":null,"visitor":false,"latex":false,"imageUploader":{"api":null,"token":null,"resp":null}}, {
+      el: '#artalk_container',
+      pageKey: path,
+      pageTitle: document.title,
       placeholder: placeholder,
-      onCommentLoaded: function() {
-        if(typeof VolantisFancyBox === "undefined") {
+      useBackendConf: true,
+      site: 'WindBack的小站',
+      darkMode: volantis.dark.mode === "dark",
+      pvEl: '#artalk_visitors',
+
+      
+    }));
+
+    Artalk.use(ctx => {
+      ctx.on('list-loaded', () => {
+        if (typeof VolantisFancyBox === "undefined"){
           const checkFancyBox = setInterval(() => {
             if(typeof VolantisFancyBox === "undefined") return;
             clearInterval(checkFancyBox);
-            VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
+            VolantisFancyBox.groupBind('.atk-content img:not([atk-emoticon])', 'Comments');
           })
         } else {
-          VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
+          VolantisFancyBox.groupBind('.atk-content img:not([atk-emoticon])', 'Comments');
         }
-      }
-    }),pdata.commentConfig))
+      })
+    })
   }
-  load_twikoo();
+
+  load_artalk();
   volantis.pjax.push(()=>{
-    if (typeof twikoo == "undefined") {
-      load_twikoo();
+    if (typeof Artalk === "undefined") {
+      load_artalk();
     } else {
-      pjax_twikoo();
+      pjax_artalk();
     }
-  },'twikoo');
+  },'artalk');
+
+  function dark_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0]) return;
+    volantis.artalk.then(ctx => {
+      ctx.setDarkMode(volantis.dark.mode === "dark")
+    })
+  }
+  volantis.dark.push(dark_artalk);
 </script>
 
     
